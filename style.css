@@ -291,3 +291,78 @@ button.unlock-btn:hover {
 		opacity: 0;
 	}
 }
+
+@media (max-width: 768px) {
+    
+    .case-file {
+        width: 95%;         
+        padding: 20px 15px; 
+        transform: none;   
+        margin: 10px 0;
+    }
+
+    .stamp {
+        top: 10px;
+        right: 10px;
+        font-size: 0.8rem;
+        padding: 2px 8px;
+        border-width: 2px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .interaction-area {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .interaction-area input {
+        width: 100%;        
+        box-sizing: border-box; 
+        font-size: 1rem;    
+        padding: 12px;     
+    }
+
+    .interaction-area button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    input.code-input {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    button.unlock-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .handwritten {
+        font-size: 2rem; 
+        margin: 20px 0;
+    }
+
+    .btn-yes {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .btn-no {
+        min-width: 120px;
+        min-height: 60px;
+        font-size: 1rem;
+        border-width: 10px; 
+    }
+}
