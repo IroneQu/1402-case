@@ -68,10 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const noBtn = document.getElementById('no-btn');
 
     yesBtn.addEventListener('click', () => {
-        alert("Wiedziałem! Do zobaczenia 27.05.2025! ❤️");
         stopConfetti(); 
         startHearts();
-        document.querySelector('.buttons').style.display = 'none';
+        document.querySelector('.buttons').innerText =
+			'Heeeeeej czy ty wiesz że ja sie w tobie kooooocham ❤️ ❤️ ❤️';
+		document.querySelector('.buttons').style.fontSize = '18px';
     });
 
     let currentScale = 1.0;
@@ -183,5 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
 
