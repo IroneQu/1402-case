@@ -360,9 +360,7 @@ button.unlock-btn:hover {
     }
 
     .btn-no {
-        min-width: 120px;
-        min-height: 60px;
-        font-size: 1rem;
-        border-width: 10px; 
+        display: hidden;
     }
 }
+
