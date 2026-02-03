@@ -1,16 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Akta Sprawy: Operacja Walentynka</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Dancing+Script:wght@700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akta Sprawy: Operacja Walentynka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
     <div class="folder-wrapper" id="folder-wrapper" onclick="openCase()">
         
@@ -93,8 +90,10 @@
                 </div>
             </div>
         </div>
+
         <div class="folder-front">
-            <div class="folder-tab">AKTA: 1402</div> <div class="stamp-cover">DOWODY RZECZOWE</div>
+            <div class="folder-tab">AKTA: 1402</div>
+            <div class="stamp-cover">DOWODY RZECZOWE</div>
             <div class="click-hint">[ Kliknij, aby otworzyć ]</div>
         </div>
 
@@ -102,11 +101,9 @@
 
     <script src="script.js"></script>
     <script>
-        // Mały skrypt tylko do otwierania teczki
         function openCase() {
             document.getElementById('folder-wrapper').classList.add('open');
         }
     </script>
 </body>
 </html>
-
