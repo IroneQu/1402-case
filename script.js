@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	};
 
-	const finalCodeCorrect = "27052025"; 
+	const finalCodeCorrect = "14022026"; 
 
     window.checkRiddle = function(id) {
         const riddle = riddles[id];
@@ -183,3 +183,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
