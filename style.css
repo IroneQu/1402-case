@@ -307,7 +307,6 @@ button.unlock-btn:hover {
 	white-space: nowrap;
 	box-sizing: border-box;
 	border-radius: 5px;
-	box-shadow: 0 0 15px rgba(211, 47, 47, 0.5);
 	border: 20px solid transparent;
 	background-clip: padding-box;
 	transition:
@@ -454,3 +453,4 @@ button.unlock-btn:hover {
 		display: none;
 	}
 }
+
