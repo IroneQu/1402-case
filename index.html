@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Akta Sprawy: Operacja Walentynka</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="case-file" id="main-content">
+			<div class="stamp">ŚCIŚLE TAJNE</div>
+
+			<div id="puzzle-screen">
+				<h1>Protokół Weryfikacji</h1>
+				<p>
+					Panno Detektyw, dostęp do sejfu wymaga potwierdzenia tożsamości.
+					Odpowiedz na pytania kontrolne, aby uzyskać części kodu głównego.
+				</p>
+
+				<hr class="dashed-line" />
+
+				<div class="riddle-container">
+					<p class="riddle-title">KROK 1: Rozbrajanie Bomby</p>
+					<p>
+						Jaki jest <strong>kod weryfikacyjny</strong> na okładce polskiego
+						podręcznika do rozbrajania bomb (Keep Talking and Nobody Explodes)?
+					</p>
+
+					<div class="interaction-area" id="area-1">
+						<input
+							type="text"
+							id="ans-1"
+							placeholder="Wpisz kod z instrukcji..."
+							autocomplete="off"
+						/>
+						<button onclick="checkRiddle(1)">SPRAWDŹ</button>
+					</div>
+
+					<div class="hidden-result" id="res-1">
+						<span class="label">DZIEŃ:</span> <span class="value">14</span>
+					</div>
+				</div>
+
+				<div class="riddle-container">
+					<p class="riddle-title">KROK 2: Totemy</p>
+					<p>
+						Jesteś na mapie w Dead by Daylight. Niezależnie od perków, ile
+						<strong>totemów</strong> zawsze pojawia się na mapie na początku
+						gry?
+					</p>
+
+					<div class="interaction-area" id="area-2">
+						<input
+							type="text"
+							id="ans-2"
+							placeholder="Wpisz liczbę..."
+							autocomplete="off"
+						/>
+						<button onclick="checkRiddle(2)">SPRAWDŹ</button>
+					</div>
+
+					<div class="hidden-result" id="res-2">
+						<span class="label">MIESIĄC:</span> <span class="value">02</span>
+					</div>
+				</div>
+
+				<div class="riddle-container">
+					<p class="riddle-title">KROK 3: Posiłek Regeneracyjny</p>
+					<p>
+						Pieszczotliwie nazywane miejsce, skąd jedzenie zawsze poprawia humor
+						to...
+					</p>
+
+					<div class="interaction-area" id="area-3">
+						<input
+							type="text"
+							id="ans-3"
+							placeholder="Co lubimy jeść?"
+							autocomplete="off"
+						/>
+						<button onclick="checkRiddle(3)">SPRAWDŹ</button>
+					</div>
+
+					<div class="hidden-result" id="res-3">
+						<span class="label">ROK:</span> <span class="value">2026</span>
+					</div>
+				</div>
+
+				<hr class="dashed-line" />
+
+				<div class="safe-box" id="safe-box">
+					<p>WPROWADŹ PEŁNĄ DATĘ (DD.MM.RRRR):</p>
+					<input
+						type="text"
+						class="code-input"
+						id="final-code"
+						placeholder="__.__.____"
+						autocomplete="off"
+					/>
+					<br />
+					<button class="unlock-btn" id="unlock-btn">ODBLOKUJ SEJF</button>
+				</div>
+			</div>
+
+			<div id="final-screen">
+				<div class="stamp stamp-solved">ZATWIERDZONO</div>
+				<h1>Misja Zakończona</h1>
+				<p>Wszystkie systemy zgodne. Wykryto anomalię sercową.</p>
+
+				<div class="handwritten">Czy zostaniesz moją Walentynką?</div>
+
+				<div class="buttons">
+					<button class="btn btn-yes" id="yes-btn">TAK, OCZYWIŚCIE!</button>
+					<button class="btn btn-no" id="no-btn">NIE</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
